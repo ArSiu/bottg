@@ -23,9 +23,9 @@ async def sent_ball(msg: Message):
 @dispatcher.message_handler(commands=["randballs"])
 async def random_ball(msg: Message):
     ball_img = [
-        r"C:\Users\ars\Desktop\bottg\img\pic1.jpg",
-        r"C:\Users\ars\Desktop\bottg\img\pic2.jpg",
-        r"C:\Users\ars\Desktop\bottg\img\pic3.jpg"
+        r"C:\Users\ars\Desktop\Bot\bottg\img\pic1.jpg",
+        r"C:\Users\ars\Desktop\Bot\bottg\img\pic2.jpg",
+        r"C:\Users\ars\Desktop\Bot\bottg\img\pic3.jpg"
     ]
     random_ball_number = random.choice(ball_img)
     return await msg.reply_photo(open(random_ball_number, 'rb').read())
